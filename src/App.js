@@ -1,25 +1,23 @@
-import logo from './logo.svg';
+
 import './App.css';
+import { HP1 } from './components/HP1.js';
+import { HP2 } from './components/HP2.js';
+
+import Navbar from './components/Navbar.js';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='mt-6 '>
+      <Navbar />
+      <div className='mt-1'> 
+        <HP1/>
+      </div>
+      <div className='mt-[24vh] '>
+        <HP2></HP2>
+      </div>
     </div>
   );
 }
 
 export default App;
+
